@@ -1,0 +1,384 @@
+body{
+    height:2500px;
+    margin:0;
+    padding:0;
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif
+}
+.topbar{
+    border:1px solid black;
+    background: #333;
+    height:40px;
+}
+.container{
+    margin:0 auto;
+    width:1226px;
+    /**border:1px solid black;**/
+}
+a{
+     text-decoration:none;
+}
+.container::before{
+   content:"";
+   display:table;
+}
+.container::after{
+   content:"";
+   display:table;
+   clear:both;    /*不允许两侧有浮动元素**/
+}
+.topbar a{
+   color:#b0b0b0;
+   font-size:12px;
+}
+.topbar a:hover{
+    color:#fff;
+} 
+.topbar-nav{
+    float:left;
+    height:40px;
+    line-height:40px;
+}
+.topbar-nav span{
+    font-size:12px;
+    color:#424242;
+    font-family:sans-serif;
+    margin:0.5em;
+}
+.topbar-info{
+    float: right;   
+    margin-right: 15px;
+}
+
+
+.topbar-cart{
+
+    float:right;   
+
+}
+.topbar-cart span{
+    margin-left:-4px;
+    font-size:12px;
+
+}
+.topbar-cart a:hover{
+    background-color :#fff;
+    color:#ff6700;
+}
+
+.topbar-cart a{
+    display:block;
+    height:40px;
+    line-height:40px;
+    text-align: center;
+    width:120px;
+    background-color: #424242;
+}
+.topbar-info a{
+    float:left;
+     padding:0 5px;
+     line-height: 40px;
+     height:40px;
+}
+
+.topbar-info span{
+    float:left;
+    font-family: sans-serif;
+    font-size:12px;
+    color:#424242;
+    line-height:40px;
+    height:40px;
+}
+.topbar-info .sep{
+padding:0 10px;
+}
+
+
+/****以下为搜索一行*********************/
+.header{
+    height:100px;
+}
+.header-logo{
+    float: left;
+    width:62px;
+    margin-top:22px;
+    height:55px;
+}
+.header-logo a{
+    display:block;
+    width:55px;
+    height:55px;
+}
+.xiaomi{
+    height:55px;
+    width:62px
+}
+
+
+/**nav navnavnavnavnavnavnav**/
+ul{
+    list-style-type: none;
+}
+ul,li{
+    margin:0;
+    padding:0;
+}
+
+.header-nav{
+    float:left;
+    width:820px;
+    height:100px;
+  /**  border:1px solid black;**/
+}
+.header-nav .nav-list{
+    height:100px;
+    width:820px;
+    font-size:16px;
+    padding:12px 0 0 30px;
+}
+
+.header-nav .nav-list .nav-category{
+    float:left;
+    width:127px;
+    padding:0 15px 0 0;
+}
+
+.nav-list .nav-category a{
+    display:block;
+    text-align:right;
+    padding:26px 0 38px;
+    color:#333;
+}           
+.header-nav .nav-list .nav-item{
+    float:left;
+}
+.header-nav .nav-list .nav-item a{
+    display:block;
+    padding:26px 10px 38px;
+    color:black;
+}
+.header-nav .nav-list .nav-item a:hover{
+    color:#ff6700;
+}
+.container::before ,.container::after,
+.clear-fix::before ,.clear-fix::after{
+    content:"";
+    display:table;
+}
+.container::after ,.clear-fix::before{
+    clear:both;
+}
+/*********************************/
+.header-search{
+    float:right;
+    width:296px;
+    height:50px;
+    margin-top:25px;
+    border:1px solid black;
+}
+.header-search .search-form{
+    position:relative;
+    display:block;
+    width:296px;
+    height:10px;
+}
+.header-search .search-form .search-text{
+    position:absolute;
+    top:0px;
+    right:51px;
+    display:block;
+    width:245px;
+    height:50px;
+    line-height:50px;
+    border:2px solid #e0e0;
+    outline:0;
+}
+.header-search .search-form .search-button{
+    position: absolute;
+    top:0;
+    right:0;
+    display:block;
+    width:52px;
+    height:50px;
+    border:2px solid #e0e0;
+    font-size:24px;
+    line-height:24px;
+    background: #fff;
+    color:#616161;
+    outline:0;
+}
+.header-search .search-form .search-button:hover{
+    background-color: #ff6700;
+    color:#fff;
+}
+
+.seckill{
+    background: #f5f5f5;
+}
+.seckill-head {
+    margin-top:19px;
+    height:170px;
+}
+
+.seckill-head img{
+   margin-left:145px;
+    width:1226px;
+     height:170px;
+}
+.seckill-nav{
+    margin:0px 0 22px;
+    width:1220px;
+}
+.seckill-navfixed{
+    position:fixed;
+    top:60px;
+}
+.seckill-nav ul{
+    height:68px;
+    background-color: #441144;
+
+}
+.seckill-nav li{
+    display:block;
+    float:left;
+    color:#fff;
+    width:20%;
+    height:68px;
+    text-align:center;
+    cursor:pointer;
+}
+.seckill-nav .active{
+  
+    background-color:#f1393a;
+    text-align:center;
+
+}
+.seckill-nav li em{
+    display:inline-block;
+    margin-left:30px;
+    font-style:normol;
+    font-size:18px;
+    line-height:1;
+    vertical-align:middle;
+}
+.seckill-nav li span{
+    display:inline-block;
+    margin-left:15px;
+    text-align:left;
+    font-size:14px;
+    line-height:1;
+    vertical-align:middle;
+}
+.seckill-nav li span em{
+    display:inline-block;
+    margin-left:0;
+    font-style:normol;
+    font-size:14px;
+    text-align: left;
+    line-height:20px;
+}
+.seckill-goods .active{
+    display:block;
+}
+
+.seckill-goods ul{
+  /** margin-left:145px;**/
+  display:none;
+    margin-right:-14px;
+    margin-top:10px;
+   /**  border:2px solid black;**/
+}
+
+.seckill-goods ul li{
+    height:190px;
+    width:399px;
+    background-color: #fff;
+    float:left;
+    margin-right:10px;
+    margin-bottom:13px;
+    /**border:2px solid black;**/
+}
+.seckill-goods .bg{
+    float:left;
+    width:190px;
+    height:190px;
+   /** border:1px solid red;**/
+}
+.seckill-goods .bg img{
+    height:190px;
+}
+.seckill-goods .info{
+    margin-left:210px;
+    width:190px;
+    height:190px;
+ /**   border:1px solid black;**/
+    padding-top:30px;
+
+}
+
+.seckill-goods .info .onea{
+    font-size:16px;
+    height:16px;
+    color:#333;
+    line-height:16px;
+    display:block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+}
+.seckill-goods .info .tips{
+    font-size:12px;
+    line-height:12px;
+    color:#b0b0b0;
+    margin-top:10px;
+}
+.seckill-goods .info .price{
+    font-size:16px;
+    line-height:16px;
+    color:#fe393a;
+    margin-top:14px;
+    margin-bottom:0;
+}
+.seckill-goods .info del{
+    color:#999;
+    font-size:12px;
+    line-height:12px;
+    margin-left:10px;
+}
+.seckill-goods .info .btn{
+   display:inline-block;
+   width:118px;
+   height:28px;
+   font-size:14px;
+   color:#fff;
+   line-height:28px;
+   text-align:center;
+   color:#fff;
+   background-color: #ff6700;
+   margin-top:19px;
+   border:1px solid #ff6700;
+
+}
+.seckill-goods .info .haha{
+    font-size:12px;
+    line-height:12px;
+    color:#999;
+    margin-top:10px;
+
+}
+.ptips{
+    margin-left:100px;
+    font-size:15px;
+    color:#999;
+    padding-bottom:35px;
+    margin-top:100px;
+}
+
+
+
+
+
+
+
+
+
+
