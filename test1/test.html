@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+       #section{
+           height:250px;
+           width:200px;
+           position:absolute;
+           left:700px;
+           top:250px;
+         /**  margin:800px 650px;**/
+           
+       }
+       #avatar{
+           width:200px;
+           height:200px;
+          
+       }
+       #linkAdress{
+           color:black;
+           text-decoration:none;
+           font-size:20px;
+           margin:200px 50px;
+
+       }
+        #linkAdress2{
+           color:black;
+           text-decoration:none;
+           font-size:20px;
+           margin:200px 50px;;
+
+       }
+
+       #linkAdress:hover{
+           color:blue;
+       }
+       #avatar2{
+        
+           width:200px;
+           height:200px;
+       }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="section"> 
+      <img id="avatar" src="0.jpg" alt="">
+      <!-- <img id="avatar2" src="1.jpg" alt=""> -->
+      <a id="linkAdress"  href="#">切换图片</a>
+    </div>
+
+
+</body>
+
+
+<script>
+   var Boss = document.getElementById("section");
+   var staff1=document.getElementById("avatar")/**.getElementsByTagName("avatar");*/
+   var staff2=document.getElementById("linkAdress")/**.getElementsByTagName("linkAdress");**/
+   var staff3=document.getElementById("avatar2")/**.getElementsByTagName("avatar2");**/
+   staff2.onclick=showimage;
+   function showimage() 
+   {
+       staff1.src="1.jpg";
+
+    //    if (staff2.id===this)
+    //    {
+    //        staff2=staff3;
+    //    }
+    //    else{
+    //        staff2.id="";
+    //    }    
+   }
+
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
